@@ -180,7 +180,7 @@ int main(int argc, char** argv)
 
         do
         {
-            std::string tmpFileName = "." + outputFile + tmpFileNameSuffix;
+            std::string tmpFileName = outputFile + tmpFileNameSuffix;
             videoThumbnailer.generateThumbnail(inputFile, imageType, tmpFileName);
             if (tmpFileNameSuffix.length() > 0)
             {
